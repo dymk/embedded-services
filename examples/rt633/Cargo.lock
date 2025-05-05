@@ -60,7 +60,7 @@ dependencies = [
 name = "battery-service"
 version = "0.1.0"
 dependencies = [
- "defmt 0.3.100",
+ "defmt 1.0.1",
  "embassy-executor",
  "embassy-futures",
  "embassy-sync",
@@ -160,6 +160,7 @@ name = "bq40z50"
 version = "0.1.0"
 source = "git+https://github.com/OpenDevicePartnership/bq40z50#f6e1b5acb5cf38865af62b94187f60bdff9f0457"
 dependencies = [
+ "defmt 0.3.100",
  "device-driver",
  "embedded-batteries-async",
  "embedded-hal 1.0.0",
@@ -345,6 +346,7 @@ version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c424cfcc4a418769975185d1d9066ad07fa05cb343fda8ea0adf98a9e9d195d2"
 dependencies = [
+ "defmt 0.3.100",
  "device-driver-macros",
  "embedded-io",
  "embedded-io-async",
@@ -537,6 +539,7 @@ version = "0.1.0"
 source = "git+https://github.com/OpenDevicePartnership/embedded-batteries#1223e7093dea2c8ccdb72f8346b2b0a773eef97b"
 dependencies = [
  "bitfield-struct",
+ "defmt 0.3.100",
  "embedded-hal 1.0.0",
 ]
 
@@ -546,6 +549,7 @@ version = "0.1.0"
 source = "git+https://github.com/OpenDevicePartnership/embedded-batteries#1223e7093dea2c8ccdb72f8346b2b0a773eef97b"
 dependencies = [
  "bitfield-struct",
+ "defmt 0.3.100",
  "embedded-batteries",
  "embedded-hal 1.0.0",
 ]
@@ -599,6 +603,9 @@ name = "embedded-io"
 version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "edd0f118536f44f5ccd48bcb8b111bdc3de888b58c74639dfb034a357d0f206d"
+dependencies = [
+ "defmt 0.3.100",
+]
 
 [[package]]
 name = "embedded-io-async"
@@ -620,7 +627,7 @@ dependencies = [
  "cortex-m",
  "cortex-m-rt",
  "critical-section",
- "defmt 0.3.100",
+ "defmt 1.0.1",
  "document-features",
  "embassy-executor",
  "embassy-futures",
@@ -715,7 +722,7 @@ version = "0.1.0"
 dependencies = [
  "cortex-m",
  "cortex-m-rt",
- "defmt 0.3.100",
+ "defmt 1.0.1",
  "embassy-executor",
  "embassy-imxrt",
  "embassy-sync",
@@ -1118,6 +1125,7 @@ dependencies = [
  "embassy-imxrt",
  "embassy-sync",
  "embassy-time",
+ "embedded-batteries-async",
  "embedded-hal-async",
  "embedded-services 0.1.0",
  "espi-service",
