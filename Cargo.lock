@@ -1306,6 +1306,7 @@ dependencies = [
  "defmt 0.3.100",
  "embedded-batteries",
  "espi-device",
+ "heapless 0.8.0",
  "num_enum",
  "pretty_assertions",
  "rstest",

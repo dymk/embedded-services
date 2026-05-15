@@ -161,6 +161,7 @@
 
 mod buffer_encoding;
 mod deserialize;
+pub mod endpoint;
 mod endpoint_id;
 pub mod error;
 mod mctp_command_code;
@@ -178,6 +179,7 @@ mod test_util;
 pub use buffer_encoding::{
     BufferEncoding, DecodeError, EncodeError, EncodingDecoder, EncodingEncoder, PassthroughEncoding,
 };
+pub use endpoint::{MctpEndpoint, RecvMessage};
 pub use endpoint_id::EndpointId;
 pub use error::{MctpPacketError, MctpPacketResult};
 pub use mctp_message_tag::MctpMessageTag;

@@ -29,6 +29,7 @@ pub enum ProtocolError {
 #[derive(Debug, Copy, Clone, PartialEq, Eq, thiserror::Error)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MctpPacketError<M: MctpMedium> {
+    WriteAborted,
     HeaderParseError(&'static str),
     CommandParseError(&'static str),
     SerializeError(&'static str),
